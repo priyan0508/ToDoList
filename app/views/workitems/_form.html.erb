@@ -1,0 +1,10 @@
+<%= form_with(model: @workitem, local: true) do |form| %>
+  <div>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+  </div>
+  <div>
+    <%= form.submit "create workitem" %>
+  </div>
+<% end %>
+

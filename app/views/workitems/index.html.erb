@@ -1,0 +1,15 @@
+<% @workitems.each do |workitem| %>
+
+<p><%= workitem.title %>
+
+<%= link_to "Edit", edit_workitem_path(workitem) %>
+
+<%= link_to "Delete", workitem_path(workitem), data:{
+	          turbo_method: :delete,
+	          turbo_confirm: "Are you sure?"
+               } %></p>
+
+
+<% end %>
+
+<%= link_to "new item", new_workitem_path %>

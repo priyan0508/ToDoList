@@ -1,0 +1,3 @@
+class Additem < ApplicationRecord
+	
+end
